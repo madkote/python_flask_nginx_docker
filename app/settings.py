@@ -8,6 +8,9 @@
 Settings
 --------
 Settings for Flask app
+
+:note: host can not be 'localhost' since it must be accessable outside of
+       the docker image.
 '''
 
 # import socket
@@ -19,7 +22,7 @@ __all__ = []
 __author__ = 'madkote <madkote(at)bluewin.ch>'
 __version__ = '.'.join(str(x) for x in VERSION)
 
-API_FLAG_DEBUG = True
+API_FLAG_DEBUG = False
 API_FLAG_THREADED = True
 # API_HOST = socket.gethostbyname(socket.gethostname())
 # API_HOST = '127.0.0.1'
